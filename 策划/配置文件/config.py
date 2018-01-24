@@ -32,26 +32,27 @@ def Read_config():
 				#print sheet.name,sheet.nrows,sheet.ncols
 				row = sheet.nrows
 				col = sheet.ncols
+				words_type = sheet.row_values(1)
 				cout_type = sheet.row_values(3)
 				words = sheet.row_values(4)
 				findtype = str(cout_type)
-				if findstr(findtype,"Client") or findstr(findtype,"Both"):
-					title = WriteTitle(sheetname,sheet,col)
-					file = Read_excel(line[0:-1],sheet,cout_type,words,row,col)
-					file_c = file[0]
+				if findstr(findtype,"Client") or findstr(findtype,"Both") or findstr(findtype,"Server"):
+					#title = WriteTitle(sheetname,sheet,col)
+					file = Read_excel(line[0:-1],sheet,words_type,cout_type,words,row,col)
+					#file_c = file[0]
 					file_s = file[1] + "</root>"
 					file_j = file[2] + "}"
-					kmap = Key_map(sheet,col)
-					test_a = local_m(sheetname)
-					test_b = Sheetname_getlength(sheetname)
-					test_c = Sheetname_haskey(sheetname)
-					test_d = Sheetname_indexOf(sheetname)
-					test_e = Sheetname_get(sheetname)
-					test_f = Sheetname_set(sheetname)
-					test_g = Sheetname_get_index_data(sheetname)
-					file_c = title[0] + file_c + kmap + test_a + test_b + test_c + test_d + test_e + test_f + test_g
-					Writefile(line[0:-6],file_c,"lua",".lua")
-					Writefile(line[0:-6],file_c,path[0],".lua")
+					#kmap = Key_map(sheet,col)
+					#test_a = local_m(sheetname)
+					#test_b = Sheetname_getlength(sheetname)
+					#test_c = Sheetname_haskey(sheetname)
+					#test_d = Sheetname_indexOf(sheetname)
+					#test_e = Sheetname_get(sheetname)
+					#test_f = Sheetname_set(sheetname)
+					#test_g = Sheetname_get_index_data(sheetname)
+					#file_c = title[0] + file_c + kmap + test_a + test_b + test_c + test_d + test_e + test_f + test_g
+					#Writefile(line[0:-6],file_c,"lua",".lua")
+					#Writefile(line[0:-6],file_c,path[0],".lua")
 					
 					if findstr(findtype,"Server") or findstr(findtype,"Both"):
 						Writefile(line[0:-6],file_s,"xml",".xml")
@@ -75,6 +76,77 @@ def Read_config():
 	#time.sleep(3)
 
 
+#读取excel中的内容
+def Read_excel(excelname,sheet,words_type,cout_type,words,row,col):
+	sheetname = excelname[0:-5]
+	testtitle = sheetname + ' = {\n\t' + '_data = {\n'
+	filelist_c = ""
+	#filelist_s = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- "
+	filelist_s = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+	filelist_j="{\n"
+	index_list = "local __index_id = {" + '\n'
+	words_str = sheet.row_values(2)
+	#for i in range(col):
+	#	wordstype =cout_type[i]
+	#	if wordstype in ["both","Both","server","Server"]:
+	#		filelist_s = filelist_s + words[i] +"=" + words_str[i] + " "
+	#filelist_s = filelist_s + "-->\n<root>\n"
+	filelist_s = filelist_s + "<root>\n"
+	
+	# 获取整行和整列的值（数组）
+	for i in range(5,row):
+		test_c=""
+		test_s=""
+		test_j=""
+		rows = sheet.row_values(i)  # 获取第i+1行内容
+		#cols = sheet.col_values(3) # 获取第4列内容
+		try:
+			key = Change_NUM(words_type,cout_type,words,rows,col)
+			key_c = key[0]
+			key_s = key[1]
+			key_j = key[2]
+			test_c = '\t[' + str(i-4) + "] = {" + test_c + key_c +'},\n'
+			filelist_c += test_c
+			test_s = "\t\t<data "+ key_s + " />\n"
+			filelist_s += test_s
+			test_j =  '\t\"' + str(int(rows[0])) + "\":{\n" + key_j +"\t},\n"
+			filelist_j += test_j
+			index_list = index_list + Index_id(rows[0],i-4)
+		except:
+			print "转换数据失败~！".encode("gbk")
+	index_list = index_list + '}\n\n'
+	filelist_c = testtitle + filelist_c + '\t}\n}\n\n' + index_list
+	return filelist_c,filelist_s,filelist_j
+
+
+#将Excel中的数值格式转换成不带小数的格式（默认转化出来的数值是带小数的）
+def Change_NUM(words_type,cout_type,words,value,num):
+	test_c=""
+	test_s=""
+	test_j=""
+	for i in range(num):
+		str_type = cout_type[i]
+		if words_type[i] in ["array","Array"]:
+			value[i] = splitArray(value[i])
+		elif type(value[i]) == type(1.1):
+			value[i] = str(int(value[i]))
+		else:
+			value[i]= '\"' + value[i] + '\"'
+
+		if str_type in ["Both","both"]:
+			test_c=test_c + value[i] + ","
+			test_s=test_s + words[i] + '=' + value[i] + ' '
+			test_j=test_j + '\t\t\"' + words[i] + '\":' + value[i] + ',\n'
+		elif str_type in ["Client","client"]:
+			test_c=test_c + value[i] + ","
+		elif str_type in ["Server","server"]:
+			test_s=test_s + words[i] + '=' + value[i] + ' '
+			test_j=test_j + '\t\t\"' + words[i] + '\":' + '' + value[i] + ',\n'
+
+	return test_c.encode('utf-8'),test_s,test_j
+
+	
+
 def Autospace(a,b):
 	space=""
 	for i in range(a-b):
@@ -90,68 +162,7 @@ def findstr(a,b):
 	else:
 		return False
 
-#读取excel中的内容
-def Read_excel(excelname,sheet,cout_type,words,row,col):
-	sheetname = excelname[0:-5]
-	testtitle = sheetname + ' = {\n\t' + '_data = {\n'
-	filelist_c = ""
-	filelist_s = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- "
-	filelist_j="{\n"
-	index_list = "local __index_id = {" + '\n'
-	words_str = sheet.row_values(2)
-	for i in range(col):
-		wordstype =cout_type[i]
-		if wordstype in ["both","Both","server","Server"]:
-			filelist_s = filelist_s + words[i] +"=" + words_str[i] + " "
-	filelist_s = filelist_s + "-->\n<root>\n"
-	
-	# 获取整行和整列的值（数组）
-	for i in range(5,row):
-		test_c=""
-		test_s=""
-		test_j=""
-		rows = sheet.row_values(i)  # 获取第i+1行内容
-		#cols = sheet.col_values(3) # 获取第4列内容
-		key = Change_NUM(cout_type,words,rows,col)
-		key_c = key[0]
-		key_s = key[1]
-		key_j = key[2]
-		test_c = '\t[' + str(i-4) + "] = {" + test_c + key_c +'},\n'
-		filelist_c += test_c
-		test_s = "\t\t<data "+ key_s + " />\n"
-		filelist_s += test_s
-		test_j =  '\t\"' + str(int(rows[0])) + "\":{\n" + key_j +"\t},\n"
-		filelist_j += test_j
-		index_list = index_list + Index_id(rows[0],i-4)
-	index_list = index_list + '}\n\n'
-	filelist_c = testtitle + filelist_c + '\t}\n}\n\n' + index_list
-	return filelist_c,filelist_s,filelist_j
 
-#将Excel中的数值格式转换成不带小数的格式（默认转化出来的数值是带小数的）
-def Change_NUM(cout_type,words,value,num):
-	test_c=""
-	test_s=""
-	test_j=""
-	for i in range(num):
-		str_type = cout_type[i]
-		if type(value[i]) == type(1.1):
-			value[i] = str(int(value[i]))
-		else:
-			value[i]= '\"' + value[i] + '\"'
-		
-		if str_type in ["Both","both"]:
-			test_c=test_c + value[i] + ","
-			test_s=test_s + words[i] + '=\"' + value[i] + '\" '
-			test_j=test_j + '\t\t\"' + words[i] + '\":' + value[i] + ',\n'
-		elif str_type in ["Client","client"]:
-			test_c=test_c + value[i] + ","
-		elif str_type in ["Server","server"]:
-			test_s=test_s + words[i] + '=\"' + value[i] + '\" '
-			test_j=test_j + '\t\t\"' + words[i] + '\":' + '' + value[i] + ',\n'
-
-	return test_c.encode('utf-8'),test_s,test_j
-
-	
 #根据路径进行存储数据文件
 def GetFilePath(filename):
 	lua=""
@@ -172,6 +183,7 @@ def GetFilePath(filename):
 def Writefile(test_name,test,path,endname):
 	if check_contain_chinese(test_name):
 		test_name=test_name[test_name.find("_")+1:]
+	#当不存在对应的文件夹时，自动创建对应的文件夹
 	if not os.path.exists(path):
 		os.makedirs(path)
 	test_name = path + "\\" + test_name + endname
@@ -200,6 +212,8 @@ def WriteTitle(titlename,sheet,col):
 			Test_C += Title + "." + Words + " = "
 			if WordsType == "string":
 				sign = '\"\"' 
+			#elif WordsType in ["array","Array"]:
+			#	sign = "0"
 			else:
 				sign = "0"
 			Test_C += sign + " --" + str_c + '\n'
@@ -217,6 +231,47 @@ def check_contain_chinese(check_str):
         if u'\u4e00' <= ch <= u'\u9fff':
             return True
     return False
+
+#处理array类型的字段格式为数组格式
+def splitArray(strdata):
+	datas = ""
+	dataArray = ""
+	strdataLen=0
+	print strdata
+	if not findstr(strdata,"|"):
+			dataArray = "[]"
+	else:
+		if findstr(strdata,","):
+			datas = splitString(strdata,",")
+			strdataLen = len(datas)
+		else:
+			datas = strdata
+			strdataLen = 0
+		print "datas:   " +str(datas)
+
+		for i in range(0,strdataLen):
+			strArrayList=""
+			strArray = splitString(datas[i],"|")
+			for j in range(0,len(strArray)):
+				strArrayList = strArrayList + strArray[j] + ","
+				if j == len(strArray)-1:
+					strArrayList = strArrayList[0:-1]
+
+			dataArray = dataArray + "[" + strArrayList + "],"
+			if i == len(datas)-1:
+				dataArray = dataArray [0:-1]
+
+	dataArray = "[" + dataArray + "]"
+	print dataArray
+	return dataArray
+
+#使用固定符号拆分字符串成数组
+def splitString(strdata,symbol):
+	data = ""
+	if findstr(strdata,symbol):
+		data=strdata.split(symbol)
+	return data
+
 
 
 def Index_id(indexid,order):

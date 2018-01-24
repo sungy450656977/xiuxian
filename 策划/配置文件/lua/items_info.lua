@@ -1,32 +1,31 @@
-local record_道具信息_items_info = {}
-
-record_道具信息_items_info.id = 0 --id
-record_道具信息_items_info.start_time = 0 --起始时间
-record_道具信息_items_info.end_time = 0 --终止时间
-record_道具信息_items_info.vit_reward = 0 --体力奖励
-record_道具信息_items_info.gold_reward = 0 --元宝奖励
-record_道具信息_items_info.desc = "" --客户端显示文字
-
-
 道具信息_items_info = {
 	_data = {
-	[1] = {1,43200,50400,50,50,"12:00-14:00 午宴",},
-	[2] = {2,64800,72000,50,50,"18:00-20:00 晚宴",},
+	[1] = {1,"西瓜",50,2,1,500,1,"1|35,2|30|50|60","1|35",1,"1|1|1000","1|1|1000","1|1|2000",},
+	[2] = {2,"瓜子",50,3,2,500,1,0,0,2,"1|2|2000","1|2|2000","1|1|1000",},
+	[3] = {3,"月饼",50,4,3,500,1,0,0,0,"1|1|3000","1|1|1000","1|1|2000",},
 	}
 }
 
 local __index_id = {
 	[1] = 1,
 	[2] = 2,
+	[3] = 3,
 }
 
 local __key_map = {
 	id = 1,
-	start_time = 2,
-	end_time = 3,
-	vit_reward = 4,
-	gold_reward = 5,
-	desc = 6,
+	name = 2,
+	desc = 3,
+	quality = 4,
+	icon = 5,
+	type = 6,
+	storage = 7,
+	getway = 8,
+	toway = 9,
+	compose = 10,
+	sell = 11,
+	fenjie = 12,
+	usecost = 13,
 }
 
 local m = {
