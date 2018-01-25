@@ -107,13 +107,14 @@ def Read_excel(excelname,sheet,words_type,cout_type,words,row,col):
 			key_j = key[2]
 			test_c = '\t[' + str(i-4) + "] = {" + test_c + key_c +'},\n'
 			filelist_c += test_c
-			test_s = "\t\t<data "+ key_s + " />\n"
+			test_s = "\t\t<data "+ key_s + "/>\n"
 			filelist_s += test_s
 			test_j =  '\t\"' + str(int(rows[0])) + "\":{\n" + key_j +"\t},\n"
 			filelist_j += test_j
 			index_list = index_list + Index_id(rows[0],i-4)
 		except:
 			print "转换数据失败~！".encode("gbk")
+		#print filelist_j
 	index_list = index_list + '}\n\n'
 	filelist_c = testtitle + filelist_c + '\t}\n}\n\n' + index_list
 	return filelist_c,filelist_s,filelist_j
@@ -124,24 +125,33 @@ def Change_NUM(words_type,cout_type,words,value,num):
 	test_c=""
 	test_s=""
 	test_j=""
+	value_c=""
 	for i in range(num):
 		str_type = cout_type[i]
-		if words_type[i] in ["array","Array"]:
-			value[i] = splitArray(value[i])
-		elif type(value[i]) == type(1.1):
-			value[i] = str(int(value[i]))
+		if type(value[i]) == type(1.1):
+			value_c = str(int(value[i]))
+			value[i] = '\"' + value_c + '\"'
 		else:
-			value[i]= '\"' + value[i] + '\"'
+			value_c = value[i]
+			value[i]= '\"' + value_c + '\"'
+
+		if str(words_type[i]) in ["array","Array"]:
+			
+			value_c = splitArray(value_c)
+			print "value_c 中：".encode("gbk")+value_c
+
 
 		if str_type in ["Both","both"]:
 			test_c=test_c + value[i] + ","
 			test_s=test_s + words[i] + '=' + value[i] + ' '
-			test_j=test_j + '\t\t\"' + words[i] + '\":' + value[i] + ',\n'
+			test_j=test_j + '\t\t\"' + words[i] + '\":' + value_c + ',\n'
 		elif str_type in ["Client","client"]:
 			test_c=test_c + value[i] + ","
 		elif str_type in ["Server","server"]:
 			test_s=test_s + words[i] + '=' + value[i] + ' '
-			test_j=test_j + '\t\t\"' + words[i] + '\":' + '' + value[i] + ',\n'
+			test_j=test_j + '\t\t\"' + words[i] + '\":' + '' + value_c + ',\n'
+	#print test_j
+
 
 	return test_c.encode('utf-8'),test_s,test_j
 
@@ -239,17 +249,22 @@ def splitArray(strdata):
 	strdataLen=0
 	print strdata
 	if not findstr(strdata,"|"):
-			dataArray = "[]"
+			dataArray = 0
+			print 1
 	else:
 		if findstr(strdata,","):
 			datas = splitString(strdata,",")
 			strdataLen = len(datas)
+			print 2
 		else:
 			datas = strdata
-			strdataLen = 0
-		print "datas:   " +str(datas)
+			strdataLen = 1
+			print 3
 
 		for i in range(0,strdataLen):
+			print i
+			print 4
+			print datas[i]
 			strArrayList=""
 			strArray = splitString(datas[i],"|")
 			for j in range(0,len(strArray)):
@@ -260,18 +275,27 @@ def splitArray(strdata):
 			dataArray = dataArray + "[" + strArrayList + "],"
 			if i == len(datas)-1:
 				dataArray = dataArray [0:-1]
-
-	dataArray = "[" + dataArray + "]"
+		dataArray = "[" + dataArray + "]"
 	print dataArray
 	return dataArray
 
+
 #使用固定符号拆分字符串成数组
 def splitString(strdata,symbol):
-	data = ""
+	print strdata
 	if findstr(strdata,symbol):
-		data=strdata.split(symbol)
-	return data
+		strdata=strdata.split(symbol)
+	return strdata
 
+#转换数组（将数组中的数值和字符类型进行区分存储，例如：[1,'a',2]）
+def arrayToStr(array):
+	arrayLen = len(array)
+	for i in range(0,arrayLen):
+		try:
+			array[i]=int(array[i])
+		except:
+			pass
+	return array
 
 
 def Index_id(indexid,order):
@@ -338,5 +362,12 @@ def Sheetname_get_index_data(sheetname):
 	return test
 
 
+
 if __name__ == '__main__':
 	Read_config()
+	#a=""
+	#c="1|1|1|2|a|4"
+	#a=splitString(c,"|")
+	#a=arrayToStr(a)
+
+	#Writefile("xxxx",a,"s",".json")

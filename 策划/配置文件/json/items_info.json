@@ -1,13 +1,2 @@
 {
-	"1":{
-		"id":1,
-		"name":"西瓜",
-		"quality":2,
-		"type":500,
-		"reward":0,
-		"compose":1,
-		"sell":[],
-		"fenjie":[],
-		"usecost":[],
-	},
 }
