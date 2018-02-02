@@ -105,16 +105,17 @@ def Read_excel(excelname,sheet,words_type,cout_type,words,row,col):
 			key_c = key[0]
 			key_s = key[1]
 			key_j = key[2]
+
 			test_c = '\t[' + str(i-4) + "] = {" + test_c + key_c +'},\n'
 			filelist_c += test_c
 			test_s = "\t\t<data "+ key_s + "/>\n"
 			filelist_s += test_s
-			test_j =  '\t\"' + str(int(rows[0])) + "\":{\n" + key_j +"\t},\n"
+			test_j =  '\t' + str(rows[0]) + ":{\n" + key_j +"\t},\n"
 			filelist_j += test_j
 			index_list = index_list + Index_id(rows[0],i-4)
 		except:
 			print "转换数据失败~！".encode("gbk")
-		#print filelist_j
+
 	index_list = index_list + '}\n\n'
 	filelist_c = testtitle + filelist_c + '\t}\n}\n\n' + index_list
 	return filelist_c,filelist_s,filelist_j
@@ -128,18 +129,23 @@ def Change_NUM(words_type,cout_type,words,value,num):
 	value_c=""
 	for i in range(num):
 		str_type = cout_type[i]
+
 		if type(value[i]) == type(1.1):
 			value_c = str(int(value[i]))
 			value[i] = '\"' + value_c + '\"'
 		else:
-			value_c = value[i]
-			value[i]= '\"' + value_c + '\"'
-
-		if str(words_type[i]) in ["array","Array"]:
-			
-			value_c = splitArray(value_c)
-			print "value_c 中：".encode("gbk")+value_c
-
+			if str(words_type[i]) in ["array","Array","array1","Array1","array2","Array2"]:
+				if str(value[i]) == "0":
+					value_c = 0
+				else:
+					value_c = str(value[i]).replace(",","],[")
+					value_c = value_c.replace("|",",")
+					value_c = "[" + value_c + "]"
+					if str(words_type[i]) in ["array2","Array2"]:
+						value_c = "[" + value_c + "]"
+			else:
+				value_c = '\"' + value[i] + '\"'
+			value[i]= '\"' + value[i] + '\"'
 
 		if str_type in ["Both","both"]:
 			test_c=test_c + value[i] + ","
@@ -150,8 +156,6 @@ def Change_NUM(words_type,cout_type,words,value,num):
 		elif str_type in ["Server","server"]:
 			test_s=test_s + words[i] + '=' + value[i] + ' '
 			test_j=test_j + '\t\t\"' + words[i] + '\":' + '' + value_c + ',\n'
-	#print test_j
-
 
 	return test_c.encode('utf-8'),test_s,test_j
 
@@ -249,8 +253,7 @@ def splitArray(strdata):
 	strdataLen=0
 	print strdata
 	if not findstr(strdata,"|"):
-			dataArray = 0
-			print 1
+		dataArray = strdata
 	else:
 		if findstr(strdata,","):
 			datas = splitString(strdata,",")
@@ -261,6 +264,7 @@ def splitArray(strdata):
 			strdataLen = 1
 			print 3
 
+		'''
 		for i in range(0,strdataLen):
 			print i
 			print 4
@@ -275,6 +279,7 @@ def splitArray(strdata):
 			dataArray = dataArray + "[" + strArrayList + "],"
 			if i == len(datas)-1:
 				dataArray = dataArray [0:-1]
+			'''
 		dataArray = "[" + dataArray + "]"
 	print dataArray
 	return dataArray
@@ -286,6 +291,7 @@ def splitString(strdata,symbol):
 	if findstr(strdata,symbol):
 		strdata=strdata.split(symbol)
 	return strdata
+
 
 #转换数组（将数组中的数值和字符类型进行区分存储，例如：[1,'a',2]）
 def arrayToStr(array):
