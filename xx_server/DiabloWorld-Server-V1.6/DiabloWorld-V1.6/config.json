@@ -10,9 +10,9 @@
          "name":"game1","db":true,"mem":true,"app":"app.gameserver","reload":"app.game.doreload","log":"app/logs/game1.log"}
 },
 "db":{
-"host":"localhost",
+"host":"127.0.0.1",
 "user":"root",
-"passwd":"111",
+"passwd":"root",
 "port":3306,
 "db":"anheisg",
 "charset":"utf8"
