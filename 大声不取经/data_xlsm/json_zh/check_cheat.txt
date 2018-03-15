@@ -1,0 +1,74 @@
+{
+  "100": {
+    "unikey":"100",
+    "id":"100",
+    "attr":0,
+    "damage":0,
+    "cd":1,
+    "special":1
+  },
+  "101": {
+    "unikey":"101",
+    "id":"101",
+    "attr":1,
+    "damage":1,
+    "cd":1,
+    "special":1
+  },
+  "102": {
+    "unikey":"102",
+    "id":"102",
+    "attr":1,
+    "damage":2,
+    "cd":1,
+    "special":1
+  },
+  "103": {
+    "unikey":"103",
+    "id":"103",
+    "attr":0,
+    "damage":0,
+    "cd":1,
+    "special":1
+  },
+  "104": {
+    "unikey":"104",
+    "id":"104",
+    "attr":0,
+    "damage":0,
+    "cd":1,
+    "special":1
+  },
+  "105": {
+    "unikey":"105",
+    "id":"105",
+    "attr":1,
+    "damage":1,
+    "cd":1,
+    "special":1
+  },
+  "106": {
+    "unikey":"106",
+    "id":"106",
+    "attr":0,
+    "damage":0,
+    "cd":1,
+    "special":1
+  },
+  "107": {
+    "unikey":"107",
+    "id":"107",
+    "attr":0,
+    "damage":0,
+    "cd":1,
+    "special":1
+  },
+  "108": {
+    "unikey":"108",
+    "id":"108",
+    "attr":0,
+    "damage":0,
+    "cd":1,
+    "special":1
+  }
+}

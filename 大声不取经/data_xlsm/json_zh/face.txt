@@ -1,0 +1,310 @@
+{
+  "1": {
+    "unikey":"1",
+    "face_id":1,
+    "face_desc":"微笑",
+    "face":"#e01",
+    "face_png":"face_01"
+  },
+  "2": {
+    "unikey":"2",
+    "face_id":2,
+    "face_desc":"委屈",
+    "face":"#e02",
+    "face_png":"face_02"
+  },
+  "3": {
+    "unikey":"3",
+    "face_id":3,
+    "face_desc":"礼物",
+    "face":"#e03",
+    "face_png":"face_03"
+  },
+  "4": {
+    "unikey":"4",
+    "face_id":4,
+    "face_desc":"惊讶",
+    "face":"#e04",
+    "face_png":"face_04"
+  },
+  "5": {
+    "unikey":"5",
+    "face_id":5,
+    "face_desc":"咖啡",
+    "face":"#e05",
+    "face_png":"face_05"
+  },
+  "6": {
+    "unikey":"6",
+    "face_id":6,
+    "face_desc":"疑问",
+    "face":"#e06",
+    "face_png":"face_06"
+  },
+  "7": {
+    "unikey":"7",
+    "face_id":7,
+    "face_desc":"气氛",
+    "face":"#e07",
+    "face_png":"face_07"
+  },
+  "8": {
+    "unikey":"8",
+    "face_id":8,
+    "face_desc":"大拇指",
+    "face":"#e08",
+    "face_png":"face_08"
+  },
+  "9": {
+    "unikey":"9",
+    "face_id":9,
+    "face_desc":"呕吐",
+    "face":"#e09",
+    "face_png":"face_09"
+  },
+  "10": {
+    "unikey":"10",
+    "face_id":10,
+    "face_desc":"呵呵",
+    "face":"#e10",
+    "face_png":"face_10"
+  },
+  "11": {
+    "unikey":"11",
+    "face_id":11,
+    "face_desc":"可爱",
+    "face":"#e11",
+    "face_png":"face_11"
+  },
+  "12": {
+    "unikey":"12",
+    "face_id":12,
+    "face_desc":"鄙视",
+    "face":"#e12",
+    "face_png":"face_12"
+  },
+  "13": {
+    "unikey":"13",
+    "face_id":13,
+    "face_desc":"弱",
+    "face":"#e13",
+    "face_png":"face_13"
+  },
+  "14": {
+    "unikey":"14",
+    "face_id":14,
+    "face_desc":"真棒",
+    "face":"#e14",
+    "face_png":"face_14"
+  },
+  "15": {
+    "unikey":"15",
+    "face_id":15,
+    "face_desc":"钱",
+    "face":"#e15",
+    "face_png":"face_15"
+  },
+  "16": {
+    "unikey":"16",
+    "face_id":16,
+    "face_desc":"你懂的",
+    "face":"#e16",
+    "face_png":"face_16"
+  },
+  "17": {
+    "unikey":"17",
+    "face_id":17,
+    "face_desc":"流汗",
+    "face":"#e17",
+    "face_png":"face_17"
+  },
+  "18": {
+    "unikey":"18",
+    "face_id":18,
+    "face_desc":"瞌睡",
+    "face":"#e18",
+    "face_png":"face_18"
+  },
+  "19": {
+    "unikey":"19",
+    "face_id":19,
+    "face_desc":"非常6+1",
+    "face":"#e19",
+    "face_png":"face_19"
+  },
+  "20": {
+    "unikey":"20",
+    "face_id":20,
+    "face_desc":"灯泡",
+    "face":"#e20",
+    "face_png":"face_20"
+  },
+  "21": {
+    "unikey":"21",
+    "face_id":21,
+    "face_desc":"喷水",
+    "face":"#e21",
+    "face_png":"face_21"
+  },
+  "22": {
+    "unikey":"22",
+    "face_id":22,
+    "face_desc":"脸红",
+    "face":"#e22",
+    "face_png":"face_22"
+  },
+  "23": {
+    "unikey":"23",
+    "face_id":23,
+    "face_desc":"酷",
+    "face":"#e23",
+    "face_png":"face_23"
+  },
+  "24": {
+    "unikey":"24",
+    "face_id":24,
+    "face_desc":"愤怒",
+    "face":"#e24",
+    "face_png":"face_24"
+  },
+  "25": {
+    "unikey":"25",
+    "face_id":25,
+    "face_desc":"玫瑰",
+    "face":"#e25",
+    "face_png":"face_25"
+  },
+  "26": {
+    "unikey":"26",
+    "face_id":26,
+    "face_desc":"开心",
+    "face":"#e26",
+    "face_png":"face_26"
+  },
+  "27": {
+    "unikey":"27",
+    "face_id":27,
+    "face_desc":"奸笑",
+    "face":"#e27",
+    "face_png":"face_27"
+  },
+  "28": {
+    "unikey":"28",
+    "face_id":28,
+    "face_desc":"亲亲",
+    "face":"#e28",
+    "face_png":"face_28"
+  },
+  "29": {
+    "unikey":"29",
+    "face_id":29,
+    "face_desc":"无语",
+    "face":"#e29",
+    "face_png":"face_29"
+  },
+  "30": {
+    "unikey":"30",
+    "face_id":30,
+    "face_desc":"抽搐",
+    "face":"#e30",
+    "face_png":"face_30"
+  },
+  "31": {
+    "unikey":"31",
+    "face_id":31,
+    "face_desc":"瀑布汗",
+    "face":"#e31",
+    "face_png":"face_31"
+  },
+  "32": {
+    "unikey":"32",
+    "face_id":32,
+    "face_desc":"吓哭",
+    "face":"#e32",
+    "face_png":"face_32"
+  },
+  "33": {
+    "unikey":"33",
+    "face_id":33,
+    "face_desc":"大哭",
+    "face":"#e33",
+    "face_png":"face_33"
+  },
+  "34": {
+    "unikey":"34",
+    "face_id":34,
+    "face_desc":"金币",
+    "face":"#e34",
+    "face_png":"face_34"
+  },
+  "35": {
+    "unikey":"35",
+    "face_id":35,
+    "face_desc":"爱",
+    "face":"#e35",
+    "face_png":"face_35"
+  },
+  "36": {
+    "unikey":"36",
+    "face_id":36,
+    "face_desc":"音乐",
+    "face":"#e36",
+    "face_png":"face_36"
+  },
+  "37": {
+    "unikey":"37",
+    "face_id":37,
+    "face_desc":"不开心",
+    "face":"#e37",
+    "face_png":"face_37"
+  },
+  "38": {
+    "unikey":"38",
+    "face_id":38,
+    "face_desc":"萌萌哒",
+    "face":"#e38",
+    "face_png":"face_38"
+  },
+  "39": {
+    "unikey":"39",
+    "face_id":39,
+    "face_desc":"胜利",
+    "face":"#e39",
+    "face_png":"face_39"
+  },
+  "40": {
+    "unikey":"40",
+    "face_id":40,
+    "face_desc":"彩虹",
+    "face":"#e40",
+    "face_png":"face_40"
+  },
+  "41": {
+    "unikey":"41",
+    "face_id":41,
+    "face_desc":"看我大鼻孔",
+    "face":"#e41",
+    "face_png":"face_41"
+  },
+  "42": {
+    "unikey":"42",
+    "face_id":42,
+    "face_desc":"不懂",
+    "face":"#e42",
+    "face_png":"face_42"
+  },
+  "43": {
+    "unikey":"43",
+    "face_id":43,
+    "face_desc":"诧异",
+    "face":"#e43",
+    "face_png":"face_43"
+  },
+  "44": {
+    "unikey":"44",
+    "face_id":44,
+    "face_desc":"伸舌头",
+    "face":"#e44",
+    "face_png":"face_44"
+  }
+}

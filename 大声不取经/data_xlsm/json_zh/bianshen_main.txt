@@ -1,0 +1,62 @@
+{
+  "1": {
+    "unikey":"1",
+    "id":"1",
+    "name":"龙帝",
+    "pinzhi":1,
+    "activate":1,
+    "hero_id":0,
+    "bianshen":"nan_bianshen1",
+    "attack_id":"longdi_attack",
+    "attack_damage":"2410",
+    "skill_id":"longdi_skill02",
+    "skill_damage":"2420",
+    "lvl_max":20,
+    "jihuo":"1000"
+  },
+  "2": {
+    "unikey":"2",
+    "id":"2",
+    "name":"孙悟空",
+    "pinzhi":2,
+    "activate":0,
+    "hero_id":0,
+    "bianshen":"nan_bianshen2",
+    "attack_id":"morph_after_skill3",
+    "attack_damage":"2360",
+    "skill_id":"morph_after_attack_skill3",
+    "skill_damage":"2320",
+    "lvl_max":30,
+    "jihuo":"2000"
+  },
+  "3": {
+    "unikey":"3",
+    "id":"3",
+    "name":"紫霞仙子",
+    "pinzhi":3,
+    "activate":0,
+    "hero_id":0,
+    "bianshen":"nan_bianshen3",
+    "attack_id":"morph_after_skill2",
+    "attack_damage":"2410",
+    "skill_id":"morph_after_attack_skill2",
+    "skill_damage":"2420",
+    "lvl_max":40,
+    "jihuo":"3000"
+  },
+  "4": {
+    "unikey":"4",
+    "id":"4",
+    "name":"哪吒",
+    "pinzhi":4,
+    "activate":0,
+    "hero_id":0,
+    "bianshen":"nan_bianshen4",
+    "attack_id":"morph_after_skill1",
+    "attack_damage":"2060",
+    "skill_id":"morph_after_attack_skill1",
+    "skill_damage":"2070",
+    "lvl_max":50,
+    "jihuo":"4000"
+  }
+}

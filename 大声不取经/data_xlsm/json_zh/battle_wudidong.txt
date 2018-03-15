@@ -1,0 +1,74 @@
+{
+  "1001": {
+    "unikey":"1001",
+    "hole_id":"1001",
+    "hole_zi":"增伤",
+    "hole_description":"乾-天-伤害",
+    "hole_skill":"wudidong_skill01",
+    "hole_limit":"10024",
+    "coordinate":"0.83|0|1"
+  },
+  "1002": {
+    "unikey":"1002",
+    "hole_id":"1002",
+    "hole_zi":"暴击",
+    "hole_description":"坤-地-暴击",
+    "hole_skill":"wudidong_skill02",
+    "hole_limit":"[]",
+    "coordinate":"-1.27|0|2.14"
+  },
+  "1003": {
+    "unikey":"1003",
+    "hole_id":"1003",
+    "hole_zi":"命中",
+    "hole_description":"震-雷-命中",
+    "hole_skill":"wudidong_skill03",
+    "hole_limit":"1098",
+    "coordinate":"-2.2|0|4.91"
+  },
+  "1004": {
+    "unikey":"1004",
+    "hole_id":"1004",
+    "hole_zi":"攻速",
+    "hole_description":"巽-风-攻速",
+    "hole_skill":"wudidong_skill04",
+    "hole_limit":"[]",
+    "coordinate":"-1.34|0|7.51"
+  },
+  "1005": {
+    "unikey":"1005",
+    "hole_id":"1005",
+    "hole_zi":"减cd",
+    "hole_description":"坎-水-减cd ",
+    "hole_skill":"wudidong_skill05",
+    "hole_limit":"[]",
+    "coordinate":"0.64|0|8.61"
+  },
+  "1006": {
+    "unikey":"1006",
+    "hole_id":"1006",
+    "hole_zi":"攻击",
+    "hole_description":"离-火-攻击",
+    "hole_skill":"wudidong_skill06",
+    "hole_limit":"[]",
+    "coordinate":"2.61|0|7.5"
+  },
+  "1007": {
+    "unikey":"1007",
+    "hole_id":"1007",
+    "hole_zi":"防御",
+    "hole_description":"艮-山-防御",
+    "hole_skill":"wudidong_skill07",
+    "hole_limit":"10002",
+    "coordinate":"3.58|0|4.86"
+  },
+  "1008": {
+    "unikey":"1008",
+    "hole_id":"1008",
+    "hole_zi":"吸血",
+    "hole_description":"兑-泽-吸血",
+    "hole_skill":"wudidong_skill08",
+    "hole_limit":"[]",
+    "coordinate":"2.82|0|2.29"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "1": {
+    "unikey":"1",
+    "id":"1",
+    "approvalable":1,
+    "kickable":1,
+    "promotion":1,
+    "demotion":1,
+    "dissolve":1,
+    "abdicate":1,
+    "reset":1,
+    "skill_upgrade":1,
+    "notice":1,
+    "declaration":1,
+    "corps_upgrade":1,
+    "accuse":0,
+    "set_top":1
+  },
+  "2": {
+    "unikey":"2",
+    "id":"2",
+    "approvalable":1,
+    "kickable":0,
+    "promotion":0,
+    "demotion":0,
+    "dissolve":0,
+    "abdicate":0,
+    "reset":1,
+    "skill_upgrade":1,
+    "notice":1,
+    "declaration":1,
+    "corps_upgrade":1,
+    "accuse":1,
+    "set_top":0
+  },
+  "3": {
+    "unikey":"3",
+    "id":"3",
+    "approvalable":0,
+    "kickable":0,
+    "promotion":0,
+    "demotion":0,
+    "dissolve":0,
+    "abdicate":0,
+    "reset":0,
+    "skill_upgrade":0,
+    "notice":0,
+    "declaration":0,
+    "corps_upgrade":0,
+    "accuse":1,
+    "set_top":0
+  }
+}

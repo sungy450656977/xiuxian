@@ -1,0 +1,74 @@
+{
+  "1": {
+    "unikey":"1",
+    "id":"1",
+    "modelid":"12",
+    "name":"法宝抢夺",
+    "resource":"xianjing_fabaoqiangduo",
+    "effect":"ui_xianjing_fabaoqiangduo"
+  },
+  "2": {
+    "unikey":"2",
+    "id":"2",
+    "modelid":"10",
+    "name":"灵台斗法",
+    "resource":"xianjing_xiantaidoufa",
+    "effect":"ui_xianjing_lingtaidoufa"
+  },
+  "3": {
+    "unikey":"3",
+    "id":"3",
+    "modelid":"54",
+    "name":"斩妖夺宝",
+    "resource":"xianjing_zhanyaoduobao",
+    "effect":"ui_xianjing_zhanyaoduobao"
+  },
+  "4": {
+    "unikey":"4",
+    "id":"4",
+    "modelid":"15",
+    "name":"大雁塔",
+    "resource":"xianjing_dayanta",
+    "effect":"ui_xianjing_dayanta"
+  },
+  "5": {
+    "unikey":"5",
+    "id":"5",
+    "modelid":"59",
+    "name":"游历四方",
+    "resource":"xianjing_youlisifang",
+    "effect":"ui_xianjing_youlisifang"
+  },
+  "6": {
+    "unikey":"6",
+    "id":"6",
+    "modelid":"71",
+    "name":"全服BOSS",
+    "resource":"xianjing_boss",
+    "effect":"ui_xianjing_quanfuboss"
+  },
+  "7": {
+    "unikey":"7",
+    "id":"7",
+    "modelid":"53",
+    "name":"噩梦入侵",
+    "resource":"xianjing_mengyanruqin",
+    "effect":"ui_xianjing_mengyanruqin"
+  },
+  "8": {
+    "unikey":"8",
+    "id":"8",
+    "modelid":"36",
+    "name":"大闹三界",
+    "resource":"xianjing_xuezhan",
+    "effect":"ui_xianjing_danaosanjie"
+  },
+  "9": {
+    "unikey":"9",
+    "id":"9",
+    "modelid":"[]",
+    "name":"敬请期待",
+    "resource":"xianjing_qidai",
+    "effect":"[]"
+  }
+}

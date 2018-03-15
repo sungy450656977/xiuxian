@@ -1,0 +1,122 @@
+{
+  "1": {
+    "unikey":"1",
+    "id":"1",
+    "res":"unity1",
+    "type":"1",
+    "position":"-0.6,0.35,5.59",
+    "angle":"0,13.93206,0",
+    "action":"idle",
+    "camera_location":"1.96,3.24,8.82",
+    "camera_rotate":"15.8715,-140.067,0",
+    "camera_fov":40
+  },
+  "2": {
+    "unikey":"2",
+    "id":"2",
+    "res":"unity2",
+    "type":"2",
+    "position":"1.82,0.35,4.04",
+    "angle":"0,-10,0",
+    "action":"idle",
+    "camera_location":"2.43,3.1,8.52",
+    "camera_rotate":"14.5,-166.7,0",
+    "camera_fov":40
+  },
+  "3": {
+    "unikey":"3",
+    "id":"3",
+    "res":"unity3",
+    "type":"2",
+    "position":"3.768,0.35,4.613",
+    "angle":"0,-30,0",
+    "action":"idle",
+    "camera_location":"4.017,3.219,9.806",
+    "camera_rotate":"12.5,-179.66,0",
+    "camera_fov":40
+  },
+  "4": {
+    "unikey":"4",
+    "id":"4",
+    "res":"unity4",
+    "type":"2",
+    "position":"-3.312,0.652,3.772",
+    "angle":"0,23,0",
+    "action":"idle",
+    "camera_location":"-2.646,3.518,9.725",
+    "camera_rotate":"11.7,-168.7,0",
+    "camera_fov":40
+  },
+  "5": {
+    "unikey":"5",
+    "id":"5",
+    "res":"unity5",
+    "type":"2",
+    "position":"-5.28,0.35,4.81",
+    "angle":"0,22,0",
+    "action":"idle",
+    "camera_location":"-4.81,2.64,9.66",
+    "camera_rotate":"10.5,-168.6,0",
+    "camera_fov":40
+  },
+  "6": {
+    "unikey":"6",
+    "id":"6",
+    "res":"unity1",
+    "type":"1",
+    "position":"200,200,200",
+    "angle":"0,10,0",
+    "action":"idle",
+    "camera_location":"200,200,200",
+    "camera_rotate":"0,180,0",
+    "camera_fov":40
+  },
+  "7": {
+    "unikey":"7",
+    "id":"7",
+    "res":"unity2",
+    "type":"2",
+    "position":"200,200,200",
+    "angle":"0,10,0",
+    "action":"idle",
+    "camera_location":"200,200,200",
+    "camera_rotate":"0,180,0",
+    "camera_fov":40
+  },
+  "8": {
+    "unikey":"8",
+    "id":"8",
+    "res":"unity3",
+    "type":"2",
+    "position":"200,200,200",
+    "angle":"0,10,0",
+    "action":"idle",
+    "camera_location":"200,200,200",
+    "camera_rotate":"0,180,0",
+    "camera_fov":40
+  },
+  "9": {
+    "unikey":"9",
+    "id":"9",
+    "res":"unity4",
+    "type":"2",
+    "position":"200,200,200",
+    "angle":"0,10,0",
+    "action":"idle",
+    "camera_location":"200,200,200",
+    "camera_rotate":"0,180,0",
+    "camera_fov":40
+  },
+  "10": {
+    "unikey":"10",
+    "id":"10",
+    "res":"unity5",
+    "type":"2",
+    "position":"200,200,200",
+    "angle":"0,10,0",
+    "action":"idle",
+    "camera_location":"200,200,200",
+    "camera_rotate":"0,180,0",
+    "camera_fov":40
+  }
+}

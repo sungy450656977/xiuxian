@@ -1,0 +1,48 @@
+return {
+  ["1"] = {
+    id = "1",
+    res = "main_scene1",
+    limit = "[]",
+    spot = "1,2,3,4,5",
+    camera_location = "-0.75,3.06,15",
+    camera_rotate = "5,-179,0",
+    camera_fov = 40,
+  },
+  ["2"] = {
+    id = "2",
+    res = "main_scene2",
+    limit = "[]",
+    spot = "6,7,8,9,10",
+    camera_location = "0,2.8,18.41",
+    camera_rotate = "0,180,0",
+    camera_fov = 40,
+  },
+  ["3"] = {
+    id = "3",
+    res = "main_scene3",
+    limit = "[]",
+    spot = "1,2,3,4,5",
+    camera_location = "0,2.8,18.41",
+    camera_rotate = "0,180,0",
+    camera_fov = 40,
+  },
+  ["4"] = {
+    id = "4",
+    res = "main_scene4",
+    limit = "[]",
+    spot = "6,7,8,9,10",
+    camera_location = "0,2.8,18.41",
+    camera_rotate = "0,180,0",
+    camera_fov = 40,
+  },
+  ["5"] = {
+    id = "5",
+    res = "main_scene5",
+    limit = "[]",
+    spot = "1,2,3,4,5",
+    camera_location = "0,2.8,18.41",
+    camera_rotate = "0,180,0",
+    camera_fov = 40,
+  },
+
+}

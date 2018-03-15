@@ -1,0 +1,442 @@
+{
+  "1000": {
+    "unikey":"1000",
+    "mail_id":"1000",
+    "mail_type":2,
+    "mail_name":"奖励邮件",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80101",
+    "reward_id":[]
+  },
+  "1001": {
+    "unikey":"1001",
+    "mail_id":"1001",
+    "mail_type":1,
+    "mail_name":"1",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"80101",
+    "reward_id":[]
+  },
+  "1002": {
+    "unikey":"1002",
+    "mail_id":"1002",
+    "mail_type":1,
+    "mail_name":"1",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"80102",
+    "reward_id":[]
+  },
+  "1003": {
+    "unikey":"1003",
+    "mail_id":"1003",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80001",
+    "reward_id":[72001]
+  },
+  "1004": {
+    "unikey":"1004",
+    "mail_id":"1004",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80002",
+    "reward_id":[72004]
+  },
+  "1005": {
+    "unikey":"1005",
+    "mail_id":"1005",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80003",
+    "reward_id":[72007]
+  },
+  "1006": {
+    "unikey":"1006",
+    "mail_id":"1006",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80004",
+    "reward_id":[72010]
+  },
+  "1007": {
+    "unikey":"1007",
+    "mail_id":"1007",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80005",
+    "reward_id":[72013]
+  },
+  "1008": {
+    "unikey":"1008",
+    "mail_id":"1008",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80006",
+    "reward_id":[72016]
+  },
+  "1009": {
+    "unikey":"1009",
+    "mail_id":"1009",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80007",
+    "reward_id":[72019]
+  },
+  "1010": {
+    "unikey":"1010",
+    "mail_id":"1010",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80008",
+    "reward_id":[72022]
+  },
+  "1011": {
+    "unikey":"1011",
+    "mail_id":"1011",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80009",
+    "reward_id":[72025]
+  },
+  "1012": {
+    "unikey":"1012",
+    "mail_id":"1012",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80010",
+    "reward_id":[72028]
+  },
+  "1013": {
+    "unikey":"1013",
+    "mail_id":"1013",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80011",
+    "reward_id":[72031]
+  },
+  "1014": {
+    "unikey":"1014",
+    "mail_id":"1014",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80012",
+    "reward_id":[72034]
+  },
+  "1015": {
+    "unikey":"1015",
+    "mail_id":"1015",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80013",
+    "reward_id":[72037]
+  },
+  "1016": {
+    "unikey":"1016",
+    "mail_id":"1016",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80014",
+    "reward_id":[72040]
+  },
+  "1017": {
+    "unikey":"1017",
+    "mail_id":"1017",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80015",
+    "reward_id":[72043]
+  },
+  "1018": {
+    "unikey":"1018",
+    "mail_id":"1018",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80016",
+    "reward_id":[72045]
+  },
+  "1019": {
+    "unikey":"1019",
+    "mail_id":"1019",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80017",
+    "reward_id":[72047]
+  },
+  "1020": {
+    "unikey":"1020",
+    "mail_id":"1020",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"80018",
+    "reward_id":[72049]
+  },
+  "2001": {
+    "unikey":"2001",
+    "mail_id":"2001",
+    "mail_type":1,
+    "mail_name":"1",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"70001",
+    "reward_id":[]
+  },
+  "2002": {
+    "unikey":"2002",
+    "mail_id":"2002",
+    "mail_type":1,
+    "mail_name":"1",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"70002",
+    "reward_id":[]
+  },
+  "2003": {
+    "unikey":"2003",
+    "mail_id":"2003",
+    "mail_type":1,
+    "mail_name":"1",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"70003",
+    "reward_id":[]
+  },
+  "2004": {
+    "unikey":"2004",
+    "mail_id":"2004",
+    "mail_type":1,
+    "mail_name":"1",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"70004",
+    "reward_id":[]
+  },
+  "3000": {
+    "unikey":"3000",
+    "mail_id":"3000",
+    "mail_type":1,
+    "mail_name":"充值成功通知邮件",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"3000",
+    "reward_id":[]
+  },
+  "3001": {
+    "unikey":"3001",
+    "mail_id":"3001",
+    "mail_type":1,
+    "mail_name":"开服战力排行通知邮件",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"3001",
+    "reward_id":[]
+  },
+  "3002": {
+    "unikey":"3002",
+    "mail_id":"3002",
+    "mail_type":1,
+    "mail_name":"普通月卡购买通知",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"3002",
+    "reward_id":[]
+  },
+  "3003": {
+    "unikey":"3003",
+    "mail_id":"3003",
+    "mail_type":1,
+    "mail_name":"终身月卡购买通知",
+    "mail_sender":"小钻风",
+    "mail_inlet":"[]",
+    "txt_id":"3003",
+    "reward_id":[]
+  },
+  "8888": {
+    "unikey":"8888",
+    "mail_id":"8888",
+    "mail_type":2,
+    "mail_name":"2",
+    "mail_sender":"小钻风",
+    "mail_inlet":"2",
+    "txt_id":"20000",
+    "reward_id":[22557]
+  },
+  "10000": {
+    "unikey":"10000",
+    "mail_id":"10000",
+    "mail_type":2,
+    "mail_name":"击杀BOSS奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"2",
+    "txt_id":"81000",
+    "reward_id":[]
+  },
+  "10001": {
+    "unikey":"10001",
+    "mail_id":"10001",
+    "mail_type":2,
+    "mail_name":"灵台斗法每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81001",
+    "reward_id":[1,1001]
+  },
+  "10002": {
+    "unikey":"10002",
+    "mail_id":"10002",
+    "mail_type":2,
+    "mail_name":"全服Boss每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81002",
+    "reward_id":[1,1002]
+  },
+  "10003": {
+    "unikey":"10003",
+    "mail_id":"10003",
+    "mail_type":2,
+    "mail_name":"梦魇入侵每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81003",
+    "reward_id":[1,1003]
+  },
+  "10004": {
+    "unikey":"10004",
+    "mail_id":"10004",
+    "mail_type":2,
+    "mail_name":"无底洞每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81004",
+    "reward_id":[1,1004]
+  },
+  "10005": {
+    "unikey":"10005",
+    "mail_id":"10005",
+    "mail_type":2,
+    "mail_name":"开服第8日战力排行奖励邮件",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81005",
+    "reward_id":[1,1005]
+  },
+  "10006": {
+    "unikey":"10006",
+    "mail_id":"10006",
+    "mail_type":2,
+    "mail_name":"幸运轮盘每日排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81006",
+    "reward_id":[1,1006]
+  },
+  "10007": {
+    "unikey":"10007",
+    "mail_id":"10007",
+    "mail_type":2,
+    "mail_name":"幸运轮盘累计排名奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81007",
+    "reward_id":[1,1007]
+  },
+  "10008": {
+    "unikey":"10008",
+    "mail_id":"10008",
+    "mail_type":2,
+    "mail_name":"全服Boss致命一击奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81008",
+    "reward_id":[1,1008]
+  },
+  "10009": {
+    "unikey":"10009",
+    "mail_id":"10009",
+    "mail_type":2,
+    "mail_name":"全服Boss最后一击奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81009",
+    "reward_id":[1,1009]
+  },
+  "10010": {
+    "unikey":"10010",
+    "mail_id":"10010",
+    "mail_type":2,
+    "mail_name":"全服Boss荣誉排行奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81010",
+    "reward_id":[1,1010]
+  },
+  "10011": {
+    "unikey":"10011",
+    "mail_id":"10011",
+    "mail_type":2,
+    "mail_name":"全服Boss单次最高伤害排行奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81011",
+    "reward_id":[1,1011]
+  },
+  "10012": {
+    "unikey":"10012",
+    "mail_id":"10012",
+    "mail_type":2,
+    "mail_name":"全服Boss本服帮会排行奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81012",
+    "reward_id":[1,1012]
+  },
+  "10013": {
+    "unikey":"10013",
+    "mail_id":"10013",
+    "mail_type":2,
+    "mail_name":"全服Boss跨服帮会排行奖励",
+    "mail_sender":"小钻风",
+    "mail_inlet":"1",
+    "txt_id":"81013",
+    "reward_id":[1,1013]
+  }
+}

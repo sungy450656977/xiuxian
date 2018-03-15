@@ -1,0 +1,41 @@
+{
+  "1001": {
+    "unikey":"1001",
+    "chouka_id":"1001",
+    "display":"普通聚仙 绿蓝紫",
+    "type":1,
+    "cost1":1,
+    "cost2":0,
+    "cost3":0,
+    "jifen":0,
+    "reward_num":[[1,51004]],
+    "reward":"51012",
+    "reset":600
+  },
+  "1002": {
+    "unikey":"1002",
+    "chouka_id":"1002",
+    "display":"高级聚仙--非第10次抽将--蓝紫橙",
+    "type":2,
+    "cost1":0,
+    "cost2":1,
+    "cost3":288,
+    "jifen":0,
+    "reward_num":[[1,51011],[15,51016]],
+    "reward":"51013",
+    "reset":82800
+  },
+  "1003": {
+    "unikey":"1003",
+    "chouka_id":"1003",
+    "display":"高级聚仙--第10次抽将--必出橙将",
+    "type":2,
+    "cost1":0,
+    "cost2":1,
+    "cost3":288,
+    "jifen":0,
+    "reward_num":[[1,51015]],
+    "reward":"51014",
+    "reset":82800
+  }
+}
